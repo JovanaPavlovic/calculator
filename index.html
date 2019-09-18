@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Calculator</title>
+
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+</head>
+
+<body>
+    <div class="calculator">
+        <input type="text" class="calc-screen" id="display">
+
+       <div class="calc-buttons">
+        <button class="btn btn1" value="sin" onclick="sin()">sin</button>
+        <button class="btn btn1" value="cos" onclick="cos()">cos</button>
+        <button class="btn btn1" value="reciprocal"onclick="reciprocal()">x<sup>-1</sup></button>
+        <button class="btn btn1" value="ln" onclick="ln()">ln</button>
+        <button class="btn btn1" value="log" onclick="log()">log</button>
+
+        <button class="btn btn1" value="x^y" onclick="setOperation('**')">y<sup>x</sup></button>
+        <button class="btn btn1" value="" onclick="sqrt()">&radic;</button>
+        <button class="btn btn1" value="" onclick="square()">x<sup>2</sup></button>
+        <button class="btn btn1" value="" onclick="factorialize()">n!</button>
+        <button class="btn btn1" value="" onclick="cube()">x<sup>3</sup></button>
+
+        <button class="btn num" id="seven" value="7" onclick="inputNum(7)">7</button>
+        <button class="btn num" id="eight" value="8" onclick="inputNum(8)">8</button>
+        <button class="btn num" id="nine" value="9" onclick="inputNum(9)">9</button>
+        <button class="btn btn2" id="del" value="del" onclick="backspace()">DEL</button>
+        <button class="btn btn2" id="ac" value="ac" onclick="clearDisplay()">AC</button>
+
+        <button class="btn num" id="four" value="4" onclick="inputNum(4)">4</button>
+        <button class="btn num" id="five" value="5" onclick="inputNum(5)">5</button>
+        <button class="btn num" id="six" value="6" onclick="inputNum(6)">6</button>
+        <button class="operator" id="times" value="*" onclick="setOperation('*')">*</button>
+        <button class="operator" id="divide" value="/" onclick="setOperation('/')">/</button>
+
+        <button class="btn num" id="one" value="1" onclick="inputNum(1)">1</button>
+        <button class="btn num" id="two" value="2" onclick="inputNum(2)">2</button>
+        <button class="btn num" id="three" value="3" onclick="inputNum(3)">3</button>
+        <button class="operator" id="plus" value="+" onclick="setOperation('+')">+</button>
+        <button class="operator" id="minus" value="-" onclick="setOperation('-')">-</button>
+
+        <button class="btn num" id="zero" value="0" onclick="inputNum(0)">0</button>
+        <button class="btn" value="" onclick="plusMin()">+/-</button>
+        <button class="decimal" id="dot" value="." onclick="insertDecimal()">.</button>
+        <button class="btn btn3" id="" value="" onclick="addExpon()">EXP</button>
+        <button class="equal-sign" id="equals" value="=" onclick="calculate()">=</button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
